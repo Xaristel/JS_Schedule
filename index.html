@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="header">Введите значения</h1>
+
+    <div id="comboBoxes">
+      <p>Выберите город: <select id="city" onchange="UpdateShopsData()"></select></p>
+      <p>Выберите цех: <select id="shop" onchange="UpdateEmployeeData()"></select></p>
+      <p>Выберите сотрудника: <select id="employee" onchange="SelectedEmployee()"></select></p>
+      <p>Бригада: <input type="text" id="brigade" value="Выберите сотрудника..." readonly="true"></p>
+      <p>Смена: <input type="text" id="shift" value="Выберите сотрудника..." readonly="true"></p>
+      <p><button type="button" id="save" onclick="SaveToJSON()">Сохранить</button></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
